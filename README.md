@@ -5,6 +5,11 @@
 `/gyo-review` is a skill that turns "read the code and assume it renders fine" into "render it, see it, reason about it, fix it, and look again."
 
 
+```bash
+npx skills add https://github.com/arintrongs/gyo-review
+```
+
+
 <p align="center">
   <img src="assets/sushi-gyo.png" alt="Gyo Review visual identity" width="320">
 </p>
@@ -36,13 +41,6 @@ The skill runs a tight loop instead of guessing from source:
 5. **Re-verify** — reload, re-capture the affected viewports, and confirm each fix worked without regressing another width.
 
 The output is a prioritized findings table (blocker / major / minor / polish) plus a summary of what changed and which viewports were actually inspected.
-
-
-## Installation
-
-```bash
-npx skills add https://github.com/arintrongs/gyo-review
-```
 
 ## Usage
 
