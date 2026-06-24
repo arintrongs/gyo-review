@@ -5,6 +5,11 @@
 `/gyo-review` is a skill that turns "read the code and assume it renders fine" into "render it, see it, reason about it, fix it, and look again."
 
 
+<p align="center">
+  <img src="assets/sushi-gyo.png" alt="Gyo Review visual identity" width="320">
+</p>
+
+
 ---
 
 ## Why this exists
