@@ -6,7 +6,7 @@
 
 
 ```bash
-npx skills add https://github.com/arintrongs/gyo-review
+npx skills add arintrongs/gyo-review
 ```
 
 
