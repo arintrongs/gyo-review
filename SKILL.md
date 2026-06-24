@@ -1,6 +1,6 @@
 ---
 name: gyo-review
-description: Drive a real browser via the /browser-use skill to visually review and fix web UI — capture screenshots across desktop, tablet, and mobile, reason about the rendered result against UX/UI heuristics, then fix the code and re-verify. Use whenever the user asks to check, review, audit, critique, polish, QA, or improve the look, layout, responsiveness, or UX of a page/component/flow, and proactively after building or editing any frontend code, since code that compiles isn't code that looks and feels right. Triggers: "review the UI", "does this look good", "check responsiveness", "is this mobile friendly", "fix the layout", "improve the UX", "something feels off", "QA this page".
+description: Drive a real browser via the /browser-use skill to visually review and fix web UI — capture screenshots across desktop, tablet, and mobile, reason about the rendered result against UX/UI heuristics, then fix the code and re-verify.
 version: 0.0.1
 author: arintrongs
 tags: [ui, ux, frontend, visual-review, responsive, accessibility, browser-use, qa, gyo, multimodal]
@@ -10,7 +10,13 @@ tags: [ui, ux, frontend, visual-review, responsive, accessibility, browser-use, 
 
 ## Why this skill exists
 
-Your code compiles, your tests pass, your diff looks clean — and your agent has still never *seen* the UI it just shipped. Reasoning from source is blind reasoning: the JSX, the CSS, the Tailwind classes can all be "correct" while the rendered screen is broken. A `flex` row that reads fine in source wraps into garbage at 375px. The primary CTA is "in the layout" and also three hundred pixels below the fold. Contrast passes in your head and fails WCAG. The modal fits — until its content overflows the viewport on a phone. None of it is visible from the code; the defect is live and hidden in the render.
+Your code compiles, your tests pass, your diff looks clean — and your agent has still never *seen* the UI it just shipped. Reasoning from source is blind reasoning: the JSX, the CSS, the Tailwind classes can all be "correct" while the rendered screen is broken. 
+- A `flex` row that reads fine in source wraps into garbage at 375px. 
+- The primary CTA is "in the layout" and also three hundred pixels below the fold. 
+- Contrast passes in your head and fails WCAG. 
+- The modal fits — until its content overflows the viewport on a phone. 
+
+**None of it is visible from the code; the defect is live and hidden in the render.**
 
 The only reliable way to know how a UI behaves is to look at the rendered result and reason about what you actually see. This skill does exactly that: it drives a real browser, captures screenshots across viewports, reasons multimodally about the rendered pixels against concrete UX/UI heuristics, then fixes the code and looks again to confirm. The loop is **render → capture → reason → fix → re-verify**, never "read code → assume".
 
